@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Du lịch hậu giang</title>
+    <link rel="icon" href="img/logo.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button id="primary-nav-button" type="button">Menu</button>
+                        <a href="index.html">
+                            <div class="logo">
+                                <img src="img/logo.jpg" style="height: 100px;">
+                            </div>
+                        </a>
+                        <nav id="primary-nav" class="dropdown cf">
+                            <ul class="dropdown menu">
+                                <li class='active'><a href="index.html">TRANG CHỦ</a></li>
+
+                                <li><a href="service.html">DỊCH VỤ</a></li>
+
+                                <li><a href="blog.html">BLOG</a></li>
+
+                                <li>
+                                    <a href="about.html">GIỚI THIỆU</a>
+                                </li>
+
+                                <li><a href="contact.html">LIÊN HỆ</a></li>
+                                <li class="nav-item dropdown">
+                                    <span class="nav-link dropdown-toggle p-0" data-toggle="dropdown"
+                                        href="LogIn.html">TÀI
+                                        KHOẢN</span>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item " style="line-height: 50px;" href="./LogIn.html">Đăng
+                                            nhập</a>
+                                        <a class="dropdown-item" style="line-height: 50px;" href="./DK.html">Đăng ký</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <section class="banner" id="top" style="background-image: url(img/slider_2.webp);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="banner-caption">
+                        <h2>Công việc sẽ làm đầy túi tiền trong khi những cuộc phiêu lưu có thể lấp đầy tâm hồn bạn</h2>
+                        <div class="btn btn-light">
+                            <a href="contact.html">Liên hệ chúng tôi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main role="main">
+        <div class="main-loader d-none">
+            <div class="loader loader3">
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main role="main" class="login">
+            <div class="container">
+                <div class="">
+                    <div class="row form-wrap">
+                        <div class="col-4"></div>
+                        <div class="col-5">
+                            <div class="form-signin">
+                                <div class="text-center heading mb-4">
+                                    <h5>Chào mừng Quý khách đến với</h5>
+                                    <h1 class="fw-bold m-0">Traveling</h1>
+                                </div>
+                                <div class="card bg-white " style="border: 0;">
+                                    <div class="d-flex tab mb-3">
+                                        <a class="w-50 p-3 signin-btn h5 mb-0 text-center fw-bold bg-primary rounded"
+                                            style="color: white;">
+                                            Đăng nhập
+                                        </a>
+                                        <a href="DK.html" class="w-50 p-3 signup-btn h5 mb-0 text-center fw-bold"
+                                            target="_blank">
+                                            Đăng ký
+                                        </a>
+                                    </div>
+                                    <form method="post">
+
+                                        <div class="mb-3">
+                                            <label class="form-label fw-bold">Số điện thoại
+                                                hoặc email</label> <span class="text-danger">*</span>
+                                            <input class="form-control" id="Email" name="Email" placeholder="Tài khoản"
+                                                type="text" value="">
+
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label fw-bold">Mật
+                                                khẩu</label> <span class="text-danger">*</span>
+                                            <input class="form-control" id="Password" name="Password"
+                                                placeholder="Mật khẩu" type="password" value="">
+                                            <div class="row">
+
+                                            </div>
+                                            <div class="text-end py-2">
+                                                <a href="#" target="_blank" rel="nofollow noreferrer">Lấy lại mật
+                                                    khẩu</a>
+                                            </div>
+                                        </div>
+
+                                        <button class="btn btn-primary w-100 py-3 fw-bold mb-5" id="btndangnhap">
+
+                                            Đăng nhập&nbsp;&nbsp;
+                                        </button>
+                                        <br>
+
+                                    </form>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+            </div>
+            </div>
+        </main>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                        <div class="logo">
+                            <img src="img/logo.jpg" style="height: 100px;">
+                        </div>
+                        <p> “Du lịch khiến một người trở nên khiêm tốn. Bạn sẽ nhận ra bạn chỉ chiếm được một nơi rất
+                            nhỏ bé trên thế giới này. “- Gustave Flaubert</p>
+                </div>
+                <div class="col-md-4">
+                            <h4>Tất cả trang</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><a href="index.html">Trang chủ</a></li>
+                                    <li><a href="about.html">Giới thiệu</a></li>
+                                    <li><a href="contact.html">Liên hệ</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><a href="service.html">Dịch vụ</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="contact-info">
+                            <h4>Thông tin liên hệ</h4>
+                        </div>
+                        <p>HG21V7A1, Khoa Phát Triển Nông Thôn</p>
+                        <ul>
+                            <li><span>Phone:</span><a href="#">+123456789</a></li>
+                            <li><span>Email:</span><a href="#">khang@gmail.com</a></li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
